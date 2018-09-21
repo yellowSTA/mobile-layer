@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<style>
+			.btn{
+				width: 120px;
+				height: 36px;
+				line-height: 36px;
+				text-align: center;
+				border-radius: 4px;
+				background: #1e90ff;
+				margin: 10px 0 0 30px;
+				color: #fff;
+			}
+			.mt10{
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="btn"><a href="javascript:;" id="toast">toast</a></div>
+		<div class="btn"><a href="javascript:;" id="alert">alert</a></div>
+		<div class="btn"><a href="javascript:;" id="confirm">confirm</a></div>
+		<div class="btn"><a href="javascript:;" id="actions">actions</a></div>
+		<div class="btn"><a href="javascript:;" id="modal">自定义modal</a></div>
+		<div class="btn" id="toptip">toptip</div>
+
+		<div class="mt10"><input type="text" name="" id="picker" value="赵 磊" readonly="readonly" /></div>
+		<div class="mt10"><input type="text" name="" id="citypicker" value="湖北省 武汉市 江夏区" readonly="readonly" /></div>
+		<!--<div class="m-toptip">aaaaa</div>-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bscroll.min.js"></script>
+		<script src="js/address.js"></script>
+		<script src="js/mobileLayer.js"></script>
+		<script>
+			
+			$.loading('加载中...',2000)
+//			$.toptip('撒旦借记卡拉斯')
+			$("#toast").on("click",function(){
+				$.toast('请输入密码')
+			})
+			$("#alert").on("click",function(){
+				$.alert('余额不足','提示',function(){
+					console.log('alert')
+				})
+			})
+			$("#confirm").on("click",function(){
+				$.confirm('确定要删除吗','提示',function(){
+					console.log('ok')
+				},function(){
+					console.log('cncle')
+				})
+			})
+			$("#toptip").on("click",function(){
+				$.toptip('撒旦借记卡拉斯')
+			})
+			
+			$("#actions").on("click",function(){
+				$.actions({
+					title:'请选择语言',
+					onClose: function(){
+						console.log('onclose')
+					},
+					actions:[
+						{
+							text: '简体中文',
+							onClick: function(){
+								console.log('简体中文')
+							}
+						},
+						{
+							text: '繁体中文',
+							onClick: function(){
+								console.log('繁体中文')
+							}
+						},
+						{
+							text: 'English',
+							onClick: function(){
+								console.log('English')
+							}
+						}
+						
+					]
+				})
+			})
+			
+			$("#modal").click(function(){
+				$.modal({
+					title:'请选择',
+					text: '想飞上天和太阳肩并肩',
+					buttons: [
+						{onClick: function(){console.log('A')}, text: 'A'},
+						{onClick: function(){console.log('B')}, text: 'B'},
+						{onClick: function(){console.log('C')}, text: 'C'},
+					]
+				})
+			})
+			
+			$("#picker").picker({
+				title:'请选择手机',
+				cols: [
+					{
+						textAlign:'center',
+						values: ['赵', '钱', '孙', '李', '周', '吴', '郑', '王']
+					},
+					{
+						textAlign:'center',
+						values: ['杰伦', '磊', '明', '小鹏', '燕姿', '菲菲', 'Baby']
+					}
+				]
+			})
+			
+			$("#citypicker").cityPicker()
+		</script>
+	</body>
+</html>
