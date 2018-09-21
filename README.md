@@ -1,12 +1,12 @@
 # mobile-layer screenshot
-![alert.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/alert.png)
-![confirm.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/confirm.png)
-![loading.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/loading.png)
-![toast.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/toast.png)
-![toptip.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/toptip.png)
-![actions.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/actions.png)
-![picker.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/picker.png)
-![cityPicker.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/cityPicker.png)
+![alert.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/alert.jpg)
+![confirm.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/confirm.jpg)
+![loading.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/loading.jpg)
+![toast.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/toast.jpg)
+![toptip.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/toptip.jpg)
+![actions.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/actions.jpg)
+![picker.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/picker.jpg)
+![cityPicker.png](https://github.com/yellowSTA/mobile-layer/raw/master/screenshot/cityPicker.jpg)
 
 # 使用
 + loading
